@@ -1,0 +1,64 @@
+﻿@model List<TreintijdenDashboard.Models.Vertrektijd>
+@{
+    Layout = "";
+    ViewBag.Title = "Home Page";
+}
+
+<html>
+<head>
+    <meta http-equiv="refresh" content="600">
+    <title>test</title>
+    <script src="~/scripts/jquery-1.10.2.min.js"></script>
+    <style>
+        html, body {
+            background-color: black;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            font-size: x-large;
+            padding:0px;
+            margin:0px;
+        }
+
+        td {
+            padding: 15px;
+        }
+
+        th {
+            background-color: #005200;
+            text-align: left;
+            padding: 10px;
+            padding-left: 15px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #313030;
+            color: white;
+        }
+
+
+        tr:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="result">
+        @await Html.PartialAsync("Partial", Model)
+    </div>
+
+    <script language = "Javascript" >
+        jQuery(document).ready(function () {
+            setTimeout('timeout_trigger()', 60000);
+        });
+
+        function timeout_trigger() {
+            $("#result").load("/Home/partial?t=" + new Date().getTime());
+            setTimeout('timeout_trigger()', 60000);
+        }
+
+
+    </script>
+
+</body>
+</html>
