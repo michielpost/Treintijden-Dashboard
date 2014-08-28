@@ -104,6 +104,7 @@ namespace TreintijdenDashboard.Services
                 {
                     Tijd = DateTime.Now,
                     Vertraging = "+5 min",
+                    VertragingTekst = "+5 min",
                     Eindbestemming = "Amsterdam",
                     Opmerkingen = "",
                     Route = "Leiden, Haarlem",

@@ -15,39 +15,33 @@
             font-family: 'Segoe UI', sans-serif;
             color: white;
             font-size: x-large;
-            padding:0px;
-            margin:0px;
+            padding: 0px;
+            margin: 0px;
         }
 
         td {
+            border-bottom: 1px solid #333;
             padding: 15px;
         }
 
         th {
-            background-color: #005200;
             text-align: left;
             padding: 10px;
             padding-left: 15px;
         }
 
-        tr:nth-child(even) {
-            background-color: #313030;
-            color: white;
-        }
-
-
-        tr:nth-child(odd) {
-            background-color: black;
-            color: white;
+        .vertraging {
+            color: #d70303;
         }
     </style>
+
 </head>
 <body>
     <div id="result">
         @await Html.PartialAsync("Partial", Model)
     </div>
 
-    <script language = "Javascript" >
+    <script language="Javascript">
         jQuery(document).ready(function () {
             setTimeout('timeout_trigger()', 60000);
         });

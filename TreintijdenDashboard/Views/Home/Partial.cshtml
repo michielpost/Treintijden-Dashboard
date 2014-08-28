@@ -17,7 +17,7 @@
                 @foreach (var tijd in Model)
             {
                     <tr>
-                        <td>@tijd.DisplayTijd @tijd.VertragingTekst</td>
+                        <td>@tijd.DisplayTijd <span class="vertraging">@tijd.VertragingTekst</span></td>
                         <td><b>@tijd.TreinSoort</b> naar @tijd.Eindbestemming</td>
                         <td>@tijd.Vertrekspoor</td>
                         <td>
