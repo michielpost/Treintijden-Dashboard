@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.22013.1
+VisualStudioVersion = 14.0.22310.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TreintijdenDashboard", "TreintijdenDashboard\TreintijdenDashboard.kproj", "{581CE3E8-E61C-472E-8D4B-8B401963E684}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Trein.Services", "Trein.Services\Trein.Services.kproj", "{64B3A9E1-E8AB-432E-A70E-4D6CD4753B7D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{581CE3E8-E61C-472E-8D4B-8B401963E684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{581CE3E8-E61C-472E-8D4B-8B401963E684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{581CE3E8-E61C-472E-8D4B-8B401963E684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64B3A9E1-E8AB-432E-A70E-4D6CD4753B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B3A9E1-E8AB-432E-A70E-4D6CD4753B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B3A9E1-E8AB-432E-A70E-4D6CD4753B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B3A9E1-E8AB-432E-A70E-4D6CD4753B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
