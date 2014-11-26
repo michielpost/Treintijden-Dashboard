@@ -4,17 +4,17 @@ using Microsoft.AspNet.Http;
 using Microsoft.AspNet.Routing;
 using Microsoft.Framework.ConfigurationModel;
 using Microsoft.Framework.DependencyInjection;
-using TreintijdenDashboard.Models;
 
-namespace TreintijdenDashboard
+namespace TreintijdenDash
 {
     public class Startup
     {
-        public void Configure(IBuilder app)
+        public void Configure(IApplicationBuilder app)
         {
+            // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
             // Setup configuration sources
             var configuration = new Configuration();
-            configuration.AddJsonFile("config.json");
+            //configuration.AddJsonFile("config.json");
             configuration.AddEnvironmentVariables();
 
             // Set up application services
@@ -30,7 +30,7 @@ namespace TreintijdenDashboard
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
-                    name: "default", 
+                    name: "default",
                     template: "{controller}/{action}/{id?}",
                     defaults: new { controller = "Home", action = "Index" });
 
