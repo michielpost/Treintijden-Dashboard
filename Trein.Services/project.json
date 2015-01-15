@@ -3,6 +3,7 @@
     "dependencies": {
         "Microsoft.Framework.ConfigurationModel.Json": "1.0.0.0-beta1",
         "System.Net.Http.WinHttpHandler": "4.0.0.0-beta-22231"
+
     },
 
     "frameworks": {
@@ -11,6 +12,19 @@
                 "System.Runtime": "4.0.20-beta-22231",
                 "System.Xml.XDocument": "4.0.0-beta-22231"
             }
+        },
+        "aspnet50": {
+            "dependencies": {
+                "Microsoft.Net.Http": "2.2.7-beta"
+            },
+            "frameworkAssemblies": {
+                "System.Xml.XDocument": "4.0.0.0",
+                "System.Xml": "4.0.0.0",
+                "System.Xml.Linq": "4.0.0.0"
+             } 
+
+
         }
+
     }
 }

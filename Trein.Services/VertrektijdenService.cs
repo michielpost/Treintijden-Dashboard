@@ -7,6 +7,7 @@ using System.Linq;
 using Microsoft.Framework.ConfigurationModel;
 using Trein.Services.Models;
 using System.Net.Http;
+using System.Net.Http;
 
 namespace TreintijdenDashboard.Services
 {

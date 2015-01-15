@@ -2,6 +2,7 @@
 using Microsoft.Framework.ConfigurationModel;
 using TreintijdenDashboard.Services;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TreintijdenDashboard.Controllers
 {
@@ -12,6 +13,7 @@ namespace TreintijdenDashboard.Controllers
         public HomeController(IConfiguration config)
         {
             _config = config;
+
         }
 
         public async Task<IActionResult> Index()
@@ -32,10 +34,7 @@ namespace TreintijdenDashboard.Controllers
             return View(vertrektijden);
         }
 
-public string Test()
-        {
-           return "ok 123";
-        }
+
 
 
       
