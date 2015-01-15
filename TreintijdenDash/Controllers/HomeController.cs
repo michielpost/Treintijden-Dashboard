@@ -32,6 +32,12 @@ namespace TreintijdenDashboard.Controllers
             return View(vertrektijden);
         }
 
+public string Test()
+        {
+           return "ok 123";
+        }
+
+
       
     }
 }
