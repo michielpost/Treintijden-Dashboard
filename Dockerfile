@@ -10,5 +10,5 @@ RUN ["kpm", "restore"]
 WORKDIR /app/TreintijdenDash
 RUN ["kpm", "restore"]
 
-EXPOSE 5004
+EXPOSE 8080
 ENTRYPOINT ["k", "kestrel"]
