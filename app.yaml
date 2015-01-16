@@ -1,7 +1,8 @@
-module: default
 runtime: custom
+version: 1
 vm: true
 api_version: 1
+threadsafe: yes
 
 manual_scaling:
   instances: 1
@@ -12,6 +13,5 @@ resources:
   disk_size_gb: 10
 
 handlers:
-- url: /.*
+- url: .*
   script: dynamic
-  secure: always
