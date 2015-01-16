@@ -1,0 +1,17 @@
+module: default
+runtime: custom
+vm: true
+api_version: 1
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 1
+  disk_size_gb: 10
+
+handlers:
+- url: /.*
+  script: dynamic
+  secure: always
