@@ -29,6 +29,11 @@ namespace TreintijdenDash
             // Add MVC to the request pipeline
             app.UseMvc(routes =>
             {
+                 routes.MapRoute(
+                    name: "google",
+                    template: "_ah/health",
+                    defaults: new { controller = "Test", action = "Test" });
+                    
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action}/{id?}",
