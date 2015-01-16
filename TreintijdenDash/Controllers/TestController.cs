@@ -9,7 +9,7 @@ namespace TreintijdenDash.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            return Content("ok");
+            return Content("ok", "text/plain");
         }
 
         public string Test()
