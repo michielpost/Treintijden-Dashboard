@@ -32,7 +32,7 @@ namespace TreintijdenDash
                  routes.MapRoute(
                     name: "google",
                     template: "_ah/health",
-                    defaults: new { controller = "Test", action = "Test" });
+                    defaults: new { controller = "Test", action = "Index" });
                     
                 routes.MapRoute(
                     name: "default",
