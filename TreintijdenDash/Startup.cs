@@ -34,6 +34,21 @@ namespace TreintijdenDash
                     template: "_ah/health",
                     defaults: new { controller = "Test", action = "Index" });
                     
+                     routes.MapRoute(
+                    name: "googlestart",
+                    template: "_ah/start",
+                    defaults: new { controller = "Test", action = "Index" });
+                    
+                     routes.MapRoute(
+                    name: "googlestop",
+                    template: "_ah/stop",
+                    defaults: new { controller = "Test", action = "Index" });
+                    
+                     routes.MapRoute(
+                    name: "googlebackground",
+                    template: "_ah/background",
+                    defaults: new { controller = "Test", action = "Index" });
+                    
                 routes.MapRoute(
                     name: "default",
                     template: "{controller}/{action}/{id?}",
