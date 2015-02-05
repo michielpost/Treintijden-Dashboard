@@ -1,8 +1,6 @@
-FROM markvnext/aspnet
+FROM microsoft/aspnet
 
-ADD ./supervisord.conf /etc/supervisor/conf.d/supervisord.conf
-
-ADD . /app/  
+COPY . /app
 WORKDIR /app
 RUN ["kpm", "restore"]
 
@@ -13,4 +11,4 @@ WORKDIR /app/TreintijdenDash
 RUN ["kpm", "restore"]
 
 EXPOSE 5004
-
+ENTRYPOINT ["k", "kestrel"]
