@@ -1,4 +1,4 @@
-FROM microsoft/aspnet
+FROM microsoft/aspnet:1.0.0-beta2
 
 COPY . /app
 WORKDIR /app
