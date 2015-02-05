@@ -1,12 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Net;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.Linq;
 using Microsoft.Framework.ConfigurationModel;
 using Trein.Services.Models;
-using System.Net.Http;
 using System.Net.Http;
 
 namespace TreintijdenDashboard.Services
@@ -33,7 +31,7 @@ namespace TreintijdenDashboard.Services
             //webclient.MaxResponseContentBufferSize = 9000000;
 
             string response;
-            using (var handler = new HttpClientHandler { Credentials = new NetworkCredential(apiUser, apiKey) })
+            using (var handler = new HttpClientHandler { Credentials = new System.Net.NetworkCredential(apiUser, apiKey) })
             using (var client = new HttpClient(handler))
             {
                 response = await client.GetStringAsync(address);
